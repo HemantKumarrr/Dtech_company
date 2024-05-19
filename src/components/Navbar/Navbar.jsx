@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Phone } from 'lucide-react';
-
+import { RiWhatsappFill } from "react-icons/ri";
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   return (
     <>
-      <div className="z-[99] fixed bottom-12 cursor-pointer right-12 p-6 rounded-full bg-green-800">
-        <Phone className="text-white" />
+      <div className="z-[99] fixed bottom-12 cursor-pointer right-12 text-white bg-green-700 w-[3rem] sm:w-[10.5rem] px-2 py-[8px] rounded-full" >
+        <Link to='https://wa.me/message/JNBCD5FXWRVWE1' target="_blank" className="flex items-center justify-center w-full gap-2" >
+          <RiWhatsappFill className="text-3xl text-white" />
+          <h1 className="hidden sm:block text-sm sm:text-md font-Popins font-semibold">WhatsApp</h1>
+        </Link>
       </div>
-      <nav className="w-full z-[77] h-[72px] fixed font-Popins flex justify-between items-center bg-black px-6 sm:px-20 shadow-md text-white">
+      <nav className="w-full z-[77] h-[72px] fixed font-Popins flex justify-between items-center bg-black md:px-20 sm:px-8 px-4 shadow-md text-white">
         <Link to="/">
           <div className="logo flex cursor-pointer">
             <img
@@ -24,7 +26,7 @@ const Navbar = () => {
             </span>
           </div>
         </Link>
-        <ul className="hidden md:flex h-full justify-between items-center gap-5 uppercase text-md">
+        <ul className="hidden md:flex h-full justify-between items-center gap-5 md:gap-2 uppercase text-md">
           <li className="bg-zinc-800 rounded-md px-3 py-1">
             <Link to="/">Home</Link>
           </li>

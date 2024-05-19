@@ -1,7 +1,18 @@
+import ProductInfo from "../../productInfo/ProductInfo"
+import ProductCard from "../../components/ProductCard/ProductCard"
+
 const Products = () => {
   return (
     <div className="pt-[72px] w-full h-screen" >
-      <h1>Products</h1>
+      <div className="w-full flex">
+        {
+          ProductInfo.map((item)=> {
+            return(
+              <ProductCard title={item.title} partImg={item.partImg} desc={item.desc} />
+            )
+          })
+        }
+      </div>
     </div>
   )
 }

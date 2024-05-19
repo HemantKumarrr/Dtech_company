@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <div className="pt-[72px] px-12 py-12 w-full h-full font-Popins">
+    <div className="pt-[72px] px-4 md:px-[10rem] py-12 w-full h-full font-Popins">
       <h1 className="text-5xl font-Popins font-semibold pt-12 pb-4 text-center">
         About Us
       </h1>
-      <div className="flex items-start justify-center border">
-      <div className="px-12 flex flex-col py-12 gap-10">
+      <div className="flex shadow-lg md:flex-row flex-col items-start justify-center border bg-zinc-200">
+      <div className="px-4 w-full md:px-12 md:w-[80%] flex flex-col py-12 gap-10">
         <div className="flex flex-col gap-5" >
           <p>
-            Established in 1990, in Ghaziabad (Uttar Pradesh), India, Monika
-            Tools has carved a niche for itself in the global markets. The
+            Established in 1990, in Ghaziabad (Uttar Pradesh), India, <b>DTech
+            Engineering</b> has carved a niche for itself in the global markets. The
             company generates a huge annual turnover under the able guidance of
-            Mr. N.K Sharma (CEO), who has rich experience of 35 years in the
+           <b> Mr. Deepak Kumar</b> (CEO), who has rich experience of 35 years in the
             domain.
           </p>
           <p>
@@ -46,13 +47,23 @@ const About = () => {
           <li>Consignment agents</li>
         </ul>
       </div>
-      <div className="py-12 w-[50%]">
-        <div className="">
-          <h1>Products</h1>
-
+      <div className="py-12 md:w-[40%] w-[100%] px-4 flex flex-col gap-5">
+        <div className="border-2 w-full bg-white py-4 px-5">
+          <h1 className="font-semibold text-xl underline p-1 mb-2" >Products</h1>
+          <Link className="py-1 bg-zinc-200 px-2 block mb-3">Precision Machined Components</Link>
+          <Link className="py-1 bg-zinc-100 px-2 block mb-3">Press Tools</Link>
+          <Link className="py-1 bg-zinc-200 px-2 block mb-3">Industrial Stampings</Link>
+          <Link className="py-1 bg-zinc-100 px-2 block mb-3">Deep Drawn Parts</Link>
+          <Link className="py-1 bg-zinc-200 px-2 block mb-3">Jigs & Fixtures</Link>
+          <Link className="py-1 bg-zinc-100 px-2 block mb-3">Sheet Metal Automotive Parts</Link>
+          <Link className="py-1 bg-zinc-200 px-2 block mb-3">Sheet Metal Electronic Parts</Link>
+          <Link className="py-1 bg-zinc-100 px-2 block mb-3">Sheet Metal Components</Link>
         </div>
-        <div className="">
-          <h1>Contact Us</h1>
+        <div className="border-2 bg-white py-4 px-5">
+          <h1 className="font-semibold text-xl underline p-1 mb-2">Contact Us</h1>
+          <p className="text-xl bg-zinc-200 px-2 text-center mb-2" >DTech Engineering</p>
+          <p className="mb-2">Mr. Deepak Kumar <b>+91 8802056194</b></p>
+          <p>Khasra No. 1143, Major Asharan Tyagi Marg, Ghaziabad, Uttar Pradesh</p>
         </div>
       </div>
       </div>
