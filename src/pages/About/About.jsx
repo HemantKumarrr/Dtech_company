@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="pt-[72px] px-4 md:px-[10rem] py-12 w-full h-full font-Popins">
-      <h1 className="text-5xl font-Popins font-semibold pt-12 pb-4 text-center">
+      <h1 className="text-5xl font-Popins font-semibold pt-12 pb-4 text-start">
         About Us
       </h1>
       <div className="flex shadow-lg md:flex-row flex-col items-start justify-center border bg-zinc-200">
