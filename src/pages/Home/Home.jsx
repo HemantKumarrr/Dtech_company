@@ -88,6 +88,7 @@ const Home = () => {
                 desc={ProductInfo[2].desc.slice(0, 45) + "...."}
               />
             </Link>
+            <div className="hidden md:block">
             <Link to={"/products/jigs-and-fixtures"}>
               <ProductCard
                 title={ProductInfo[3].title}
@@ -95,8 +96,9 @@ const Home = () => {
                 desc={ProductInfo[3].desc.slice(0, 40) + "..."}
               />
             </Link>
+            </div>
           </div>
-          <div className=" pb-8 text-center">
+          <div className="pb-16 text-center">
             <p className="py-4 text-2xl capitalize tracking-wide">
               We will send you the Best Price Possible
             </p>
@@ -106,11 +108,9 @@ const Home = () => {
             >
               Get Quote Now
             </button>
-            {
-              isForm &&
-            <GetQuoteForm setIsForm={setIsForm} />
-            }
+            {isForm && <GetQuoteForm setIsForm={setIsForm} />}
           </div>
+          
         </div>
       </div>
     </>

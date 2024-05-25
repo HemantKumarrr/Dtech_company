@@ -1,7 +1,7 @@
 const ProductCard = ({ title, partImg, desc }) => {
   return (
     <div>
-      <div className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-zinc-800 text-gray-50 p-5">
+      <div className="relative group cursor-pointer overflow-hidden duration-500 w-[16rem] h-80 bg-zinc-800 text-gray-50 p-5">
         <div>
           <img className="group-hover:scale-110 w-full object-cover object-center h-60 duration-500" src={partImg} alt="parts-image" />
           {/* <div className={`group-hover:scale-110 w-full h-60 bg-[url("${partImg}")] bg-center bg-cover duration-500`}></div> */}

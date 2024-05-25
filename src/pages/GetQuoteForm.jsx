@@ -1,5 +1,5 @@
 import { IoCloseSharp } from "react-icons/io5";
-import QueryForm from "../components/QueryForm/QueryForm";
+import FormModal from "../components/QueryForm/FormModal";
 
 const GetQuoteForm = ({ setIsForm }) => {
   return (
@@ -16,7 +16,7 @@ const GetQuoteForm = ({ setIsForm }) => {
           </div>
         </div> */}
         <div className="bg-white py-4 px-8 w-full h-[70%] rounded-lg">
-          <QueryForm />
+          <FormModal />
         </div>
       </div>
     </div>
