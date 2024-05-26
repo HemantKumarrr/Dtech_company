@@ -10,7 +10,6 @@ const QueryForm = () => {
                 Your Name
               </label>
               <input
-                autoFocus
                 className="px-4 border border-zinc-400 py-2 focus:border focus:border-blue-600 mb-4 text-xl rounded-md outline-none"
                 type="text"
                 id="name"

@@ -11,7 +11,6 @@ const FormModal = () => {
                 Your Name
               </label>
               <input
-                autoFocus
                 className="px-4 border border-zinc-400 py-1 focus:border focus:border-blue-600 mb-4 text-lg rounded-md outline-none"
                 type="text"
                 id="name"

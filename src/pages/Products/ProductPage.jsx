@@ -4,7 +4,6 @@ import ProductInfo from "../../productInfo/ProductInfo"
 const ProductPage = () => {
   const params = useParams()
   const data = ProductInfo[params.id]
-  console.log(data)
 
   return (
     <>

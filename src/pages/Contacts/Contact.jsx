@@ -2,14 +2,15 @@ import { FaUser } from "react-icons/fa";
 import { MdEmail, MdOutlinePhoneAndroid } from "react-icons/md";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import QueryForm from "../../components/QueryForm/QueryForm";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <div className="pt-[72px] w-full h-full">
       <div className="w-full h-full px-4 sm:px-[4rem] md:px-[10rem] pb-20">
-      <h1 className="text-5xl font-Popins font-semibold pt-12 pb-4 text-start">
+      <motion.h1 className="text-3xl sm:text-5xl font-Popins font-semibold pt-12 pb-4 text-start">
         Contact Us
-      </h1>
+      </motion.h1>
         <div className="w-full shadow-lg bg-zinc-200 flex md:flex-row flex-col gap-14 justify-center items-start rounded-lg px-6 sm:px-20 py-8">
           <div className="w-full">
             <h1 className="font-semibold text-3xl tracking-wider py-4 mb-4">DTech Engineering</h1>

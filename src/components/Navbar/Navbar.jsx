@@ -47,6 +47,7 @@ const Navbar = () => {
                 className="hidden peer"
                 type="checkbox"
                 value={isMenu}
+                checked={isMenu}
                 onChange={() => setIsMenu((prev) => !prev)}
               />
               <div className="w-[50%] h-[5px] bg-white rounded-sm transition-all duration-300 origin-left translate-y-[0.95rem] peer-checked:rotate-[-45deg]"></div>
@@ -59,22 +60,22 @@ const Navbar = () => {
           <div className="md:hidden bg-black absolute top-0 right-0 w-[90%] h-screen">
             <ul className="w-full h-full pt-28 px-6">
               <li className="w-full mb-8 bg-zinc-800 py-2 rounded-lg text-center">
-                <Link to="/" className="text-xl p-2">
+                <Link to="/" className="text-xl p-2" onClick={()=> setIsMenu(false)}>
                   Home
                 </Link>
               </li>
               <li className="w-full mb-8 bg-zinc-800 py-2 rounded-lg text-center">
-                <Link to="/about" className="text-xl whitespace-nowrap p-2">
+                <Link to="/about" className="text-xl whitespace-nowrap p-2" onClick={()=> setIsMenu(false)}>
                   About Us
                 </Link>
               </li>
               <li className="w-full mb-8 bg-zinc-800 whitespace-nowrap py-2 rounded-lg text-center">
-                <Link to="/products" className="text-xl whitespace-nowrap p-2">
+                <Link to="/products" className="text-xl whitespace-nowrap p-2" onClick={()=> setIsMenu(false)}>
                   Products
                 </Link>
               </li>
               <li className="w-full bg-zinc-800 py-2 rounded-lg text-center">
-                <Link to="/contact" className="text-xl p-2 whitespace-nowrap">
+                <Link to="/contact" className="text-xl p-2 whitespace-nowrap" onClick={()=> setIsMenu(false)}>
                   Contact Us
                 </Link>
               </li>
