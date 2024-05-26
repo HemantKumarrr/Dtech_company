@@ -10,11 +10,11 @@ const ProductPage = () => {
     <>
       <div className="w-full h-screen pt-[7rem] px-[5rem]">
         <div className="shadow-lg w-full rounded-md font-Popins" >
-          <div className="w-full flex">
-            <div className="">
-              <img src={data.partImg} alt="product-image" />
+          <div className="w-full flex py-8 justify-center">
+            <div className="w-full ">
+              <img className="" src={data.partImg} alt="product-image" />
             </div>
-            <div className="px-5 py-8">
+            <div className="px-5 w-full ">
               <h1 className="text-2xl pb-4 font-bold" >{data.title}</h1>
               <div className="p-4 border-2 rounded-sm shadow-sm">
                 <ul className="flex flex-col gap-4">

@@ -67,21 +67,21 @@ const Home = () => {
             </h1>
           </div>
           <div className="product-box relative w-full sm:w-[90%] mx-auto flex gap-5 items-center justify-center sm:justify-between flex-wrap px-12 py-12">
-            <Link to={"/products/precision-machined-components"}>
+            <Link to={"/products/precision-machined-components/0"}>
               <ProductCard
                 title={ProductInfo[0].title}
                 partImg={ProductInfo[0].partImg}
                 desc={ProductInfo[0].desc.slice(0, 0)}
               />
             </Link>
-            <Link to={"/products/press-tools"}>
+            <Link to={"/products/press-tools/1"}>
               <ProductCard
                 title={ProductInfo[1].title}
                 partImg={ProductInfo[1].partImg}
                 desc={ProductInfo[1].desc.slice(0, 40) + "..."}
               />
             </Link>
-            <Link to={"/products/deep-drawn-parts"}>
+            <Link to={"/products/deep-drawn-parts/2"}>
               <ProductCard
                 title={ProductInfo[2].title}
                 partImg={ProductInfo[2].partImg}
@@ -89,7 +89,7 @@ const Home = () => {
               />
             </Link>
             <div className="hidden md:block">
-            <Link to={"/products/jigs-and-fixtures"}>
+            <Link to={"/products/jigs-and-fixtures/3"}>
               <ProductCard
                 title={ProductInfo[3].title}
                 partImg={ProductInfo[3].partImg}
